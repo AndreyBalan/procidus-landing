@@ -1,0 +1,37 @@
+//====================================================================================================
+// Hero Section
+.hero {
+    padding: toRem(64) toRem(0) toRem(80) toRem(0);
+    // .hero__container
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    // .hero__content
+    &__content {
+        max-width: toRem(588);
+    }
+    // .hero__descr
+    &__descr {
+        font-size: toRem(20);
+        font-weight: 400;
+        line-height: 150%;
+        margin-top: toRem(16);
+    }
+    &__img {
+        border-radius: toRem(0) toRem(90);
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: toRem(504);
+        height: toRem(782);
+        background-image: url("img/hero-bg.png");
+        z-index: -1;
+    }
+}
+
+//====================================================================================================

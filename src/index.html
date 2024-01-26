@@ -4,7 +4,41 @@
     <body>
         <div class="wrapper">
             @@include('html/_header.htm',{})
-            <main class="page"></main>
+            <main class="page">
+                <section class="hero">
+                    <div class="hero__container">
+                        <div class="hero__content">
+                            <h1 class="title title_hero">Welcome to PROCIDUS</h1>
+                            <p class="hero__descr">
+                                The Multi-Purpose E-commerce Marketplace System by PROCIDUS is a
+                                versatile and robust platform designed to cater to the dynamic needs
+                                of modern e-commerce businesses.
+                            </p>
+
+                            <button class="button_hero" onclick="document.location='contact.html'">
+                                <span class="text">Contact Us</span>
+                                <div class="rotate">
+                                    <svg
+                                        viewBox="0 0 100 100"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="button__arrow button__arrow--out">
+                                        <path
+                                            d="M54.927 82.226v-82.22600000000001h-9.342v82.85700000000001l-24.676-24.676-3.303-3.303-6.606 6.606 3.303 3.303 32.066 32.066 3.303 3.303.316-.316.268.268 3.303-3.303 32.066-32.066 3.303-3.303-6.606-6.606-3.303 3.303-24.092 24.092z" />
+                                    </svg>
+                                    <svg
+                                        viewBox="0 0 100 100"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="button__arrow button__arrow--in">
+                                        <path
+                                            d="M54.927 82.226v-82.22600000000001h-9.342v82.85700000000001l-24.676-24.676-3.303-3.303-6.606 6.606 3.303 3.303 32.066 32.066 3.303 3.303.316-.316.268.268 3.303-3.303 32.066-32.066 3.303-3.303-6.606-6.606-3.303 3.303-24.092 24.092z" />
+                                    </svg>
+                                </div>
+                            </button>
+                        </div>
+                        <img src="@img/hero-img.png" class="hero__img" alt="Hero Img" />
+                    </div>
+                </section>
+            </main>
             @@include('html/_footer.htm',{})
         </div>
         @@include('html/_js.htm',{})
