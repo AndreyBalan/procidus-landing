@@ -33,5 +33,61 @@
         z-index: -1;
     }
 }
-
 //====================================================================================================
+// About Section
+.about {
+    padding: toRem(80) toRem(0);
+    // .about__container
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__content {
+        max-width: toRem(588);
+    }
+    // .about__descr
+    &__descr {
+        font-size: 18px;
+        line-height: 160%;
+    }
+    &__benefits {
+        padding-top: toRem(160);
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: toRem(24);
+        .benefits {
+            &__container {
+            }
+            // .benefits__item
+            &__item {
+                padding: toRem(40);
+                background-color: #fff;
+                border-radius: toRem(16);
+                border: toRem(1) solid #d3dcd4;
+            }
+            // .benefits__item-icon
+            &__item-icon {
+            }
+            // .benefits__item-heading
+            &__item-heading {
+                margin-top: toRem(16);
+                color: $darkColor;
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 150%; /* 27px */
+            }
+            // .benefits__item-descr
+            &__item-descr {
+                margin-top: toRem(8);
+                line-height: 150%;
+            }
+        }
+    }
+}
+
+.title {
+    max-width: toRem(588);
+}
+.button_about {
+    margin-top: toRem(16);
+}
