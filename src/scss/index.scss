@@ -91,3 +91,24 @@
 .button_about {
     margin-top: toRem(16);
 }
+//========================================================================================================================================================
+// Features Section
+.features {
+    padding: toRem(80);
+    // .features__container
+    &__container {
+    }
+    // .features__descr
+    &__descr {
+        margin-top: toRem(8);
+        max-width: toRem(660);
+        text-align: center;
+        margin: 0 auto;
+        line-height: 150%;
+    }
+}
+.title_features {
+    text-align: center;
+    max-width: toRem(433);
+    margin: 0 auto;
+}
