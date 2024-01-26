@@ -55,7 +55,7 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: toRem(24);
-        .benefits {
+        .card {
             &__container {
             }
             // .benefits__item
@@ -111,4 +111,55 @@
     text-align: center;
     max-width: toRem(433);
     margin: 0 auto;
+}
+//========================================================================================================================================================
+// Offer section
+.offer {
+    padding: toRem(80);
+    // .offer__container
+    &__container {
+    }
+    // .offer__subtitle
+    &__subtitle {
+        text-align: center;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 150%; /* 22.5px */
+    }
+    // .offer__title
+    &__title {
+        text-align: center;
+        margin: 0 auto;
+    }
+    // .offer__wrapper
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: toRem(40);
+        gap: toRem(24);
+    }
+}
+.card-item {
+}
+.card {
+    &__item {
+        background-color: #fff;
+        padding: toRem(40);
+        border-radius: toRem(16);
+        border: toRem(1) solid #d3dcd4;
+    }
+
+    // .card__item-heading
+    &__item-heading {
+        margin-top: toRem(16);
+        color: $darkColor;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 150%; /* 27px */
+    }
+    // .card__item-descr
+    &__item-descr {
+        margin-top: toRem(8);
+        line-height: 150%; /* 24px */
+    }
 }
