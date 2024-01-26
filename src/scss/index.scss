@@ -163,3 +163,96 @@
         line-height: 150%; /* 24px */
     }
 }
+//========================================================================================================================================================
+// Technology Section
+.technology {
+    padding: toRem(80);
+    // .technology__container
+    &__container {
+    }
+    // .technology__descr
+    &__descr {
+        margin-top: toRem(8);
+        max-width: toRem(660);
+        text-align: center;
+        margin: 0 auto;
+        font-size: 20px;
+        line-height: 150%; /* 30px */
+    }
+}
+
+.title_technology {
+    text-align: center;
+    margin: 0 auto;
+}
+.tabs__navigation-technology {
+    max-width: toRem(600);
+}
+.tabs__wrapper-technology {
+    // column-gap: toRem(125);
+}
+.tabs__descr-technology {
+    max-width: toRem(486);
+}
+.tabs {
+    // .tabs__navigation
+    &__navigation {
+    }
+    // .tabs__title
+    &__title {
+    }
+    // .tabs__content
+    &__content {
+    }
+    // .tabs__body
+    &__body {
+    }
+    // .tabs__wrapper
+    &__wrapper {
+    }
+    // .tabs__main
+    &__main {
+    }
+    // .tabs__heading
+    &__heading {
+    }
+    // .tabs__descr
+    &__descr {
+    }
+    // .tabs__list
+    &__list {
+        max-width: toRem(588);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: toRem(24);
+    }
+    // .tabs__list-item
+    &__list-item {
+        padding-left: toRem(56);
+    }
+    // .tabs__list-item_heading
+    &__list-item_heading {
+        color: $darkColor;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 150%; /* 27px */
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            width: toRem(40);
+            height: toRem(40);
+            background-color: #f1f1f1;
+            left: toRem(-56);
+            border-radius: 100%;
+            background-image: url("img/icons/checkmark.svg");
+        }
+    }
+    // .tabs__list-item_descr
+    &__list-item_descr {
+        margin-top: toRem(6);
+        line-height: 150%; /* 24px */
+    }
+}
+._tab-active {
+}
