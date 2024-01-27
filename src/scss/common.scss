@@ -42,10 +42,30 @@
         padding: toRem(8);
         border-radius: toRem(4);
     }
+    &_solutions {
+        width: 100%;
+        text-align: center;
+        align-self: flex-end;
+        justify-content: flex-end;
+        margin-top: auto;
+    }
 }
 
-//
-/* Variables */
+.subtitle {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 150%; /* 22.5px */
+}
+
+.descr {
+    margin-top: toRem(8);
+    max-width: toRem(660);
+    text-align: center;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 150%; /* 30px */
+}
 
 $transition: 0.35s;
 
