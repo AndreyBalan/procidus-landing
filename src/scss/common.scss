@@ -57,6 +57,11 @@
             margin-top: toRem(24);
         }
     }
+    &_left {
+        @media (max-width: $tablet) {
+            margin: toRem(32) 0 0 0;
+        }
+    }
 }
 
 .subtitle {

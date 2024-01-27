@@ -8,7 +8,11 @@
     // .footer__wrapper
     &__wrapper {
         display: flex;
+        flex-wrap: wrap;
         column-gap: toRem(104);
+        @media (max-width: $tablet) {
+            gap: toRem(80);
+        }
     }
     // .footer__main
     &__main {

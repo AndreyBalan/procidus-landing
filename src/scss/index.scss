@@ -316,6 +316,12 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: toRem(24);
+        @media (max-width: $tablet) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media (max-width: $mobile) {
+            grid-template-columns: repeat(1, 1fr);
+        }
     }
     // .solutions__item
     &__item {
@@ -327,6 +333,12 @@
         height: toRem(790);
         display: flex;
         flex-direction: column;
+        img {
+            max-width: 100%;
+        }
+        @media (max-width: $tablet) {
+            height: toRem(800);
+        }
     }
     &__item-list {
         padding-left: toRem(32);
@@ -362,6 +374,10 @@
     &__item-descr {
         line-height: 150%;
         margin-top: toRem(8);
+        @media (max-width: $tablet) {
+            &:last-child {
+            }
+        }
     }
 }
 .title_solutions {
@@ -430,6 +446,9 @@
         top: toRem(354);
         z-index: -1;
         background-image: url("img/overview-bg.png");
+        @media (max-width: $tablet) {
+            display: none;
+        }
     }
     // .overview__container
     &__container {
@@ -442,17 +461,40 @@
     &__wrapper {
         margin-top: toRem(40);
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         padding-bottom: toRem(80);
     }
     &__img {
+        @media (max-width: $tablet) {
+            width: 100%;
+        }
         img {
             border-radius: toRem(90) 0;
+            &:first-child {
+                display: none;
+                @media (max-width: $tablet) {
+                    display: block;
+                    border-radius: toRem(90);
+                }
+            }
+            &:last-child {
+                @media (max-width: $tablet) {
+                    display: none;
+                }
+            }
+            @media (max-width: $tablet) {
+                width: 100%;
+            }
         }
     }
     // .overview__list
     &__list {
         max-width: toRem(588);
+        @media (max-width: $tablet) {
+            padding-top: toRem(160);
+            max-width: 100%;
+        }
     }
     // .overview__list-heading
     &__list-heading {
@@ -473,6 +515,9 @@
     }
     // .tabs__list-item_descr
     &__list-item_descr {
+        @media (max-width: $tablet) {
+            width: 100%;
+        }
     }
 }
 .title_overview {
@@ -486,10 +531,14 @@
         padding: toRem(80) 0;
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
     // .partners__content
     &__content {
         max-width: toRem(486);
+        @media (max-width: $tablet) {
+            max-width: 100%;
+        }
     }
     // .partners__descr
     &__descr {
@@ -503,6 +552,10 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: toRem(24);
+        @media (max-width: $tablet) {
+            margin-top: toRem(24);
+            max-width: 100%;
+        }
     }
 }
 .title {
@@ -534,10 +587,14 @@
         padding: toRem(80) 0;
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
     // .partnership__main
     &__main {
         max-width: toRem(486);
+        @media (max-width: $tablet) {
+            max-width: 100%;
+        }
     }
     // .partnership__descr
     &__descr {
@@ -548,6 +605,10 @@
     // .partnership__steps
     &__steps {
         max-width: toRem(588);
+        @media (max-width: $tablet) {
+            max-width: 100%;
+            margin-top: toRem(32);
+        }
     }
     // .partnership__list
     &__list {
@@ -609,8 +670,15 @@
     // .cta__wrapper
     &__wrapper {
         padding: toRem(64) 0;
+        border-radius: toRem(32);
         min-height: toRem(327);
         background-image: url("img/cta-bg.png");
+        background-size: cover; /* или contain в зависимости от ваших потребностей */
+        background-position: center center;
+        background-repeat: no-repeat;
+        @media (max-width: $tablet) {
+            border-radius: toRem(32);
+        }
     }
     // .cta__title
     &__title {
