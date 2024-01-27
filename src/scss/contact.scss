@@ -1,6 +1,6 @@
 .contact {
     @media (max-width: $mobile) {
-        background-image: url("img/contact-bg-mob.png");
+        background-image: url("@img/contact-bg-mob.png");
         background-size: cover;
         background-repeat: repeat;
     }
@@ -16,7 +16,7 @@
         padding: toRem(64) toRem(57);
         min-height: toRem(742);
 
-        background-image: url("img/contact-bg-mob.png");
+        background-image: url("@img/contact-bg-mob.png");
         border-radius: toRem(40);
         background-size: cover;
         background-repeat: no-repeat;

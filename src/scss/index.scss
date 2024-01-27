@@ -39,7 +39,7 @@
         right: 0;
         width: toRem(504);
         height: toRem(782);
-        background-image: url("img/hero-bg.png");
+        background-image: url("@img/hero-bg.png");
         z-index: -1;
         @media (max-width: $tablet) {
             display: none;
@@ -293,7 +293,7 @@
             background-color: #f1f1f1;
             left: toRem(-56);
             border-radius: 100%;
-            background-image: url("img/icons/checkmark.svg");
+            background-image: url("@img/icons/checkmark.svg");
         }
     }
     // .tabs__list-item_descr
@@ -378,7 +378,7 @@
             width: toRem(24);
             height: toRem(24);
             left: toRem(-32);
-            background-image: url("img/icons/checkmark-circle.svg");
+            background-image: url("@img/icons/checkmark-circle.svg");
         }
     }
     // .solutions__item-descr
@@ -456,7 +456,7 @@
         left: 0;
         top: toRem(354);
         z-index: -1;
-        background-image: url("img/overview-bg.png");
+        background-image: url("@img/overview-bg.png");
         @media (max-width: $tablet) {
             display: none;
         }
@@ -689,7 +689,7 @@
         padding: toRem(64) 0;
         border-radius: toRem(32);
         min-height: toRem(327);
-        background-image: url("img/cta-bg.png");
+        background-image: url("@img/cta-bg.png");
         background-size: cover; /* или contain в зависимости от ваших потребностей */
         background-position: center center;
         background-repeat: no-repeat;
