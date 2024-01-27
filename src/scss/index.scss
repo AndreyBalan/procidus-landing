@@ -439,7 +439,7 @@
 .partners {
     // .partners__wrapper
     &__wrapper {
-        padding-top: toRem(80);
+        padding: toRem(80) 0;
         display: flex;
         justify-content: space-between;
     }
@@ -482,4 +482,67 @@
     // .card__item-descr
     &__item-descr {
     }
+}
+
+.partnership {
+    // .partnership__wrapper
+    &__wrapper {
+        padding-top: toRem(80);
+        display: flex;
+        justify-content: space-between;
+    }
+    // .partnership__main
+    &__main {
+        max-width: toRem(486);
+    }
+    // .partnership__descr
+    &__descr {
+        margin-top: toRem(16);
+        font-size: 18px;
+        line-height: 160%; /* 28.8px */
+    }
+    // .partnership__steps
+    &__steps {
+        max-width: toRem(588);
+    }
+    // .partnership__list
+    &__list {
+        list-style-type: none; /* Убираем стандартные маркеры (цифры) */
+        counter-reset: my-counter; /* Сбрасываем счетчик для использования внутренних псевдоэлементов */
+        padding-left: 0; /* Убираем внутренний отступ у списка */
+    }
+    // .partnership__list-item
+    &__list-item {
+        color: #003c2f;
+        font-size: 18px;
+        line-height: 160%;
+        &:not(:first-child) {
+            margin-top: toRem(16);
+        }
+        span {
+            color: #003c2f;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 150%; /* 27px */
+        }
+        counter-increment: my-counter;
+        position: relative;
+        padding-left: 20px;
+        &::before {
+            content: counter(my-counter) ".";
+            position: absolute;
+            left: 0;
+            font-size: toRem(18);
+            font-weight: 700;
+            line-height: 150%;
+            color: #003c2f;
+        }
+    }
+}
+.title {
+}
+.title_partnership {
+    font-size: 28px;
+    line-height: 140%; /* 39.2px */
+    letter-spacing: -0.28px;
 }
