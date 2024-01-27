@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+    @@include('html/_head.htm',{ "title":"Procidus | Contact Us" })
+    <body>
+        <div class="wrapper">
+            @@include('html/_header-other.htm',{})
+            <main class="page">
+                <section class="contact">
+                    <div class="contact__container">
+                        <div class="contact__wrapper">
+                            <div class="contact__main">
+                                <h2 class="contact__title">Feel Free to Contact Us</h2>
+                                <p class="contact__descr">
+                                    Reach out to us using the contact information provided on this
+                                    page, and we'll respond to you promptly!
+                                </p>
+                                <div class="about__contacts contacts">
+                                    <div class="about__items">
+                                        <div class="about__item">
+                                            <h4 class="about__item-heading">Procidus:</h4>
+                                            <p class="about__item-contact">
+                                                9, Vasili Michailidi, 3026, Limassol, Cyprus
+                                            </p>
+                                        </div>
+                                        <div class="about__item">
+                                            <h4 class="about__item-heading">Customer Support:</h4>
+                                            <a
+                                                href="mailto:support@procidus.com"
+                                                class="about__item-mail"
+                                                >support@procidus.com</a
+                                            >
+                                            <a href="tel:+44 75 77878360" class="about__item-phone"
+                                                >+44 75 77878360</a
+                                            >
+                                        </div>
+                                        <div class="about__item">
+                                            <h4 class="about__item-heading">Sales Inquiries:</h4>
+                                            <a
+                                                href="mailto:sales@procidus.com"
+                                                class="about__item-mail"
+                                                >sales@procidus.com</a
+                                            >
+                                            <a href="tel:+44 75 77878360" class="about__item-phone"
+                                                >+44 75 77878360</a
+                                            >
+                                        </div>
+                                        <div class="about__item">
+                                            <h4 class="about__item-heading">General Inquiries:</h4>
+                                            <a
+                                                href="mailto:info@procidus.com"
+                                                class="about__item-mail"
+                                                >info@procidus.com</a
+                                            >
+                                            <a href="tel:+44 75 77878360" class="about__item-phone"
+                                                >+44 75 77878360</a
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <form id="form" method="POST" class="contact__form">
+                                <h3 class="contact__form-title">Get Started with a Free Demo</h3>
+                                <div class="contact__form-row">
+                                    <input
+                                        class="input contact__form-input"
+                                        type="text"
+                                        name="Name"
+                                        required
+                                        placeholder="Name" />
+                                    <input
+                                        class="contact__form-input"
+                                        type="text"
+                                        name="Surname"
+                                        placeholder="Surname" />
+                                </div>
+                                <div class="contact__form-row">
+                                    <input
+                                        class="contact__form-input"
+                                        type="email"
+                                        name="Email"
+                                        required
+                                        placeholder="Email" />
+                                    <input
+                                        class="contact__form-input"
+                                        type="text"
+                                        name="Phone Number"
+                                        required
+                                        placeholder="Phone number" />
+                                </div>
+                                <textarea
+                                    class="contact__form-input contact__form-input_textarea"
+                                    name="Notes"
+                                    placeholder="Let us know how we can help"></textarea>
+
+                                <div class="contact__form-row contact__form-row-checkbox">
+                                    <input
+                                        type="checkbox"
+                                        class="custom-checkbox"
+                                        id="check"
+                                        name="check"
+                                        required
+                                        value="yes" />
+                                    <label for="check"></label>
+                                    <p>
+                                        I have read and agree with <span>Procidus</span>
+                                        <a href="legal.html">Privacy Policy</a> and
+                                        <a href="legal.html">Terms of Use</a>
+                                    </p>
+                                </div>
+
+                                <button
+                                    type="submit"
+                                    class="button is-primary contact__form-button button"
+                                    id="submit-button">
+                                    Send Your Request
+                                </button>
+                                <div
+                                    id="message"
+                                    style="
+                                        display: none;
+                                        margin: 20px;
+                                        width: 100%;
+                                        font-weight: bold;
+                                        color: #5bc858;
+                                        padding: 8px;
+                                        background-color: #fafafa;
+                                        border-radius: 4px;
+                                        border-color: #5bc858;
+                                    "></div>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            @@include('html/_footer-other.htm',{})
+        </div>
+        @@include('html/_js.htm',{})
+    </body>
+</html>
