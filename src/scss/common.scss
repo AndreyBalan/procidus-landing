@@ -49,6 +49,14 @@
         justify-content: flex-end;
         margin-top: auto;
     }
+    &_tabs {
+        @media (max-width: $tablet) {
+            display: block;
+            width: max-content;
+            margin: 0 auto;
+            margin-top: toRem(24);
+        }
+    }
 }
 
 .subtitle {

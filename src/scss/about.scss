@@ -2,12 +2,7 @@
     background-color: #fafafa;
     padding: toRem(80) 0;
     // .about__container
-    &__container {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        align-items: baseline;
-    }
+
     // .about__main
     &__main {
         max-width: toRem(690);
@@ -143,5 +138,11 @@
             color: $darkColor;
             font-weight: 700;
         }
+    }
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: baseline;
     }
 }

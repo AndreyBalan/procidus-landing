@@ -7,6 +7,10 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        @media (max-width: $tablet) {
+            justify-content: center;
+            text-align: center;
+        }
     }
     // .hero__content
     &__content {
@@ -18,9 +22,15 @@
         font-weight: 400;
         line-height: 150%;
         margin-top: toRem(16);
+        @media (max-width: $tablet) {
+            text-align: center;
+        }
     }
     &__img {
         border-radius: toRem(0) toRem(90);
+        @media (max-width: $tablet) {
+            display: none;
+        }
     }
     &::before {
         content: "";
@@ -31,6 +41,9 @@
         height: toRem(782);
         background-image: url("img/hero-bg.png");
         z-index: -1;
+        @media (max-width: $tablet) {
+            display: none;
+        }
     }
 }
 //====================================================================================================
@@ -40,10 +53,21 @@
     // .about__container
     &__container {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
+        @media (max-width: $tablet) {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
     }
     &__content {
         max-width: toRem(588);
+        @media (max-width: $tablet) {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
     }
     // .about__descr
     &__descr {
@@ -55,6 +79,12 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: toRem(24);
+        @media (max-width: $tablet) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media (max-width: $mobile) {
+            grid-template-columns: repeat(1, 1fr);
+        }
         .card {
             &__container {
             }
@@ -130,6 +160,9 @@
         grid-template-columns: repeat(3, 1fr);
         margin-top: toRem(40);
         gap: toRem(24);
+        @media (max-width: $tablet) {
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
 }
 .card-item {
@@ -192,7 +225,8 @@
     &__navigation {
     }
     // .tabs__title
-    &__title {
+    &__title-technology {
+        padding: toRem(10) toRem(10);
     }
     // .tabs__content
     &__content {
@@ -202,6 +236,10 @@
     }
     // .tabs__wrapper
     &__wrapper {
+        @media (max-width: $tablet) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     }
     // .tabs__main
     &__main {
@@ -211,9 +249,15 @@
     }
     // .tabs__descr
     &__descr {
+        @media (max-width: $tablet) {
+            margin-top: toRem(16);
+        }
     }
     // .tabs__list
     &__list {
+        @media (max-width: $tablet) {
+            margin-top: toRem(32);
+        }
         max-width: toRem(588);
         display: grid;
         grid-template-columns: repeat(2, 1fr);

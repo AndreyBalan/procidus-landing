@@ -1,14 +1,19 @@
 .header {
-    min-height: toRem(75);
     border-bottom: toRem(1) solid #d3dcd4;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    // display: flex;
+    // align-items: center;
+    // justify-content: space-between;
     // .header__container
     &__container {
+        height: toRem(75);
         display: flex;
         align-items: center;
-        column-gap: toRem(80);
+        // column-gap: toRem(80);
+        justify-content: space-between;
+        // @include adaptiveValue("column-gap", 80, 0, 0, $containerWidth, 767.98);
+        @media (max-width: $tablet) {
+            justify-content: space-between;
+        }
     }
     // .header__logo
     &__logo {
@@ -20,6 +25,7 @@
 .menu {
     display: flex;
     align-items: center;
+
     // .menu__icon
     &__icon {
     }
@@ -30,7 +36,11 @@
     &__list {
         display: flex;
         align-items: center;
-        column-gap: toRem(48);
+        // column-gap: toRem(48);
+        @include adaptiveValue("column-gap", 48, 20, 0, $containerWidth, 767.98);
+        @media (max-width: $tablet) {
+            display: none;
+        }
     }
     // .menu__item
     &__item {
