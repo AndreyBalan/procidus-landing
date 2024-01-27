@@ -11,6 +11,9 @@
     &_hero {
         font-size: toRem(42);
         line-height: normal;
+        @media (max-width: $mobile) {
+            font-size: toRem(36);
+        }
     }
 }
 
@@ -60,6 +63,10 @@
     &_left {
         @media (max-width: $tablet) {
             margin: toRem(32) 0 0 0;
+        }
+        @media (max-width: $mobile) {
+            width: 100%;
+            text-align: center;
         }
     }
 }

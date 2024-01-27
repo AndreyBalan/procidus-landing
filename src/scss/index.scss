@@ -124,7 +124,9 @@
 //========================================================================================================================================================
 // Features Section
 .features {
-    padding: toRem(80);
+    padding: toRem(80) 0;
+    @media (max-width: $mobile) {
+    }
     // .features__container
     &__container {
     }
@@ -135,6 +137,9 @@
         text-align: center;
         margin: 0 auto;
         line-height: 150%;
+        @media (max-width: $mobile) {
+            max-width: 100%;
+        }
     }
 }
 .title_features {
@@ -145,7 +150,7 @@
 //========================================================================================================================================================
 // Offer section
 .offer {
-    padding: toRem(80);
+    padding: toRem(80) 0;
     // .offer__container
     &__container {
     }
@@ -162,6 +167,9 @@
         gap: toRem(24);
         @media (max-width: $tablet) {
             grid-template-columns: repeat(2, 1fr);
+        }
+        @media (max-width: $mobile) {
+            grid-template-columns: repeat(1, 1fr);
         }
     }
 }
@@ -192,7 +200,7 @@
 //========================================================================================================================================================
 // Technology Section
 .technology {
-    padding: toRem(80);
+    padding: toRem(80) 0;
     // .technology__container
     &__container {
     }
@@ -262,6 +270,9 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: toRem(24);
+        @media (max-width: $mobile) {
+            grid-template-columns: repeat(1, 1fr);
+        }
     }
     // .tabs__list-item
     &__list-item {
@@ -295,7 +306,7 @@
 //========================================================================================================================================================
 // Solutions Section
 .solutions {
-    padding: toRem(80);
+    padding: toRem(80) 0;
 
     // .solutions__container
     &__container {
@@ -387,7 +398,7 @@
 //========================================================================================================================================================
 // Faq Section
 .faq {
-    padding: toRem(80);
+    padding: toRem(80) 0;
     // .faq__container
     &__container {
     }
@@ -477,6 +488,9 @@
                     display: block;
                     border-radius: toRem(90);
                 }
+                @media (max-width: $mobile) {
+                    border-radius: toRem(24);
+                }
             }
             &:last-child {
                 @media (max-width: $tablet) {
@@ -555,6 +569,9 @@
         @media (max-width: $tablet) {
             margin-top: toRem(24);
             max-width: 100%;
+        }
+        @media (max-width: $mobile) {
+            grid-template-columns: repeat(1, 1fr);
         }
     }
 }
@@ -679,6 +696,9 @@
         @media (max-width: $tablet) {
             border-radius: toRem(32);
         }
+        @media (max-width: $mobile) {
+            padding: toRem(64) toRem(32);
+        }
     }
     // .cta__title
     &__title {
@@ -688,6 +708,9 @@
         line-height: 140%;
         letter-spacing: -0.4px;
         text-align: center;
+        @media (max-width: $mobile) {
+            font-size: toRem(32);
+        }
     }
     // .cta__descr
     &__descr {

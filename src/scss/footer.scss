@@ -2,6 +2,12 @@
 .footer {
     padding-top: toRem(64);
     background-color: #f1f1f1;
+    @media (max-width: $mobile) {
+        text-align: center;
+    }
+    a {
+        display: block;
+    }
     // .footer__container
     &__container {
     }
@@ -13,6 +19,9 @@
         @media (max-width: $tablet) {
             gap: toRem(80);
         }
+        @media (max-width: $mobile) {
+            gap: 40;
+        }
     }
     // .footer__main
     &__main {
@@ -22,6 +31,9 @@
     &__logo {
         img {
             max-width: toRem(111);
+            @media (max-width: $mobile) {
+                text-align: center;
+            }
         }
     }
     // .footer__items
@@ -31,6 +43,10 @@
         grid-template-columns: repeat(2, 1fr);
         column-gap: toRem(48);
         row-gap: toRem(24);
+        @media (max-width: $mobile) {
+            grid-template-columns: repeat(1, 1fr);
+            text-align: left;
+        }
     }
     // .footer__item
     &__item {
@@ -102,11 +118,19 @@
     &__nav {
         // max-width: toRem(300);
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
-        column-gap: toRem(80);
+        gap: toRem(80);
+        @media (max-width: $mobile) {
+            width: 100%;
+            gap: toRem(32);
+        }
     }
     // .footer__nav-item
     &__nav-item {
+        @media (max-width: $mobile) {
+            width: 100%;
+        }
     }
     // .footer__nav-heading
     &__nav-heading {

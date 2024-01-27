@@ -25,6 +25,9 @@
     line-height: 150%;
     position: relative;
     list-style: none;
+    @media (max-width: $mobile) {
+        padding-right: toRem(50);
+    }
     &::marker,
     &::-webkit-details-marker {
         display: none;
