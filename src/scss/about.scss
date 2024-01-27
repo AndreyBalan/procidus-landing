@@ -115,3 +115,29 @@
         }
     }
 }
+
+.legal {
+    padding: toRem(80) 0;
+    // .legal__container
+    &__container {
+    }
+    &__wrapper {
+        max-width: toRem(894);
+    }
+    // .legal__subtitle
+    &__subtitle {
+        color: $darkColor;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 140%; /* 44.8px */
+        &:not(:first-child) {
+            margin-top: toRem(32);
+        }
+    }
+}
+.about {
+    // .about__descr
+    &__descr-main {
+        margin: toRem(24) 0;
+    }
+}
