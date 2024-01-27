@@ -22,16 +22,8 @@
             margin-top: toRem(32);
         }
     }
-    // .about__descr
-    &__descr {
-        margin-top: toRem(16);
-        font-size: 20px;
-        line-height: 150%; /* 30px */
-        span {
-            color: $darkColor;
-            font-weight: 700;
-        }
-    }
+    // .legal__descr
+
     // .about__contacts
     &__contacts {
         max-width: toRem(384);
@@ -136,8 +128,20 @@
     }
 }
 .about {
-    // .about__descr
+    // .legal__descr
     &__descr-main {
         margin: toRem(24) 0;
+    }
+}
+
+.legal {
+    &__descr {
+        margin-top: toRem(16);
+        font-size: 20px;
+        line-height: 150%; /* 30px */
+        span {
+            color: $darkColor;
+            font-weight: 700;
+        }
     }
 }

@@ -75,7 +75,8 @@
         background: #f1f1f1;
         padding: toRem(56) toRem(40);
         border-radius: toRem(16);
-        @include adaptiveValue("padding-top", 56, 40, 0, $containerWidth, 767.98);
+        position: relative;
+        @include adaptiveValue("padding-top", 40, 40, 0, $containerWidth, 767.98);
         @include adaptiveValue("padding-right", 40, 30, 0, $containerWidth, 767.98);
         @include adaptiveValue("padding-bottom", 56, 40, 0, $containerWidth, 767.98);
         @include adaptiveValue("padding-left", 40, 30, 0, $containerWidth, 767.98);
@@ -84,6 +85,12 @@
         }
         @media (max-width: $mobile) {
             min-width: 100%;
+        }
+        .form__error {
+            position: absolute;
+            color: red;
+            top: toRem(50);
+            left: toRem(50);
         }
         &-title {
             color: $darkColor;
@@ -107,7 +114,7 @@
             position: relative;
             &_textarea {
                 min-width: 100%;
-                min-height: toRem(188);
+                min-height: toRem(140);
                 resize: none;
                 margin-bottom: toRem(16);
                 @media (max-width: 1025px) {
@@ -226,4 +233,10 @@
 }
 .custom-checkbox:disabled + label::before {
     background-color: #e9ecef;
+}
+.form__error {
+    position: absolute;
+    color: red;
+    top: toRem(50);
+    left: toRem(50);
 }
