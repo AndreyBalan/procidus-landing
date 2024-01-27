@@ -1,0 +1,117 @@
+.about {
+    background-color: #fafafa;
+    padding: toRem(80) 0;
+    // .about__container
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: baseline;
+    }
+    // .about__main
+    &__main {
+        max-width: toRem(690);
+    }
+    // .about__title
+    &__title {
+        color: $darkColor;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 140%; /* 44.8px */
+        &:not(:first-child) {
+            margin-top: toRem(32);
+        }
+    }
+    // .about__descr
+    &__descr {
+        margin-top: toRem(16);
+        font-size: 20px;
+        line-height: 150%; /* 30px */
+        span {
+            color: $darkColor;
+            font-weight: 700;
+        }
+    }
+    // .about__contacts
+    &__contacts {
+        max-width: toRem(384);
+        padding: toRem(32);
+        border-radius: toRem(16);
+        background-color: #f1f1f1;
+    }
+    // .about__items
+    &__items {
+        display: flex;
+        flex-direction: column;
+        gap: toRem(24);
+    }
+    // .about__item
+    &__item {
+        font-size: 16px;
+        line-height: 150%; /* 24px */
+        a {
+            transition: all 0.3s;
+            @media (any-hover: hover) {
+                &:hover {
+                    color: $greenColor;
+                }
+            }
+        }
+    }
+    // .about__item-heading
+    &__item-heading {
+        color: $darkColor;
+        font-size: 16px;
+        margin-bottom: toRem(16);
+        font-weight: 700;
+        line-height: 150%; /* 24px */
+        &:not(:first-child) {
+            margin-top: toRem(24);
+        }
+    }
+    // .about__item-contact
+    &__item-contact {
+        position: relative;
+        padding-left: toRem(28);
+        &::before {
+            content: "";
+            position: absolute;
+            width: toRem(20);
+            height: toRem(20);
+            left: 0;
+            top: 0;
+            background-image: url("img/icons/location-green.svg");
+        }
+    }
+    // .about__item-mail
+    &__item-mail {
+        position: relative;
+        display: block;
+        padding-left: toRem(28);
+        &::before {
+            content: "";
+            position: absolute;
+            width: toRem(20);
+            height: toRem(20);
+            left: 0;
+            top: 0;
+            background-image: url("img/icons/mail-green.svg");
+        }
+    }
+    // .about__item-phone
+    &__item-phone {
+        position: relative;
+        display: block;
+        padding-left: toRem(28);
+        margin-top: toRem(8);
+        &::before {
+            content: "";
+            position: absolute;
+            width: toRem(20);
+            height: toRem(20);
+            left: 0;
+            top: 0;
+            background-image: url("img/icons/call-green.svg");
+        }
+    }
+}

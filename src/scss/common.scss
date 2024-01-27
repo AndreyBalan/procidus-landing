@@ -67,6 +67,23 @@
     line-height: 150%; /* 30px */
 }
 
+.legal {
+    // .legal__heading
+    &__heading {
+        min-height: toRem(217);
+        background-image: url("img/legal-bg.png");
+    }
+    &__container {
+    }
+    // .legal__title
+    &__title {
+        color: $darkColor;
+        font-size: 42px;
+        font-weight: 700;
+        padding-top: toRem(80);
+    }
+}
+
 $transition: 0.35s;
 
 /* Button styles */
