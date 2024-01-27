@@ -751,10 +751,11 @@
                             technology providers, business consultants, and marketing agencies.
                         </p>
                         <div class="overview__wrapper">
-                            <div class="overview__img">
-                                <img src="@img/overview-mob.png" alt="Overview" />
+                            <picture>
+                                <source media="(min-width: 1000px)" srcset="@img/overview.png" />
+                                <source media="(max-width: 999px)" srcset="@img/overview-mob.png" />
                                 <img src="@img/overview.png" alt="Overview" />
-                            </div>
+                            </picture>
                             <div class="overview__list">
                                 <h3 class="overview__list-heading">Why Partner with Us?</h3>
                                 <div class="tabs__list-item overview__list-item">
