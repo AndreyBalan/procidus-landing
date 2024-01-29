@@ -244,6 +244,9 @@
     }
     // .tabs__wrapper
     &__wrapper {
+        img {
+            border-radius: toRem(10);
+        }
         @media (max-width: $tablet) {
             flex-wrap: wrap;
             justify-content: center;
